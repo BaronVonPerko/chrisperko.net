@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
     <!-- Custom styling -->
-    <link rel="stylesheet" href="custom.css"/>
+    <link rel="stylesheet" href="styles/custom.css"/>
+
+    <!-- Font Awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" id="navbar">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
@@ -34,18 +38,26 @@
                 <li><a href="#section-services">Services</a></li>
                 <li><a href="#section-contact">Contact</a></li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-github"></span></a></li>
+                <li><a href="#"><span class="fa fa-codepen"></span></a></li>
+                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+            </ul>
         </div> <!-- end navbar-collapse -->
     </div>
 </nav> <!-- end navbar -->
 
 
-<div class="container">
+<!--<div class="container">
     <div class="jumbotron">
         <h1>Chris Perko</h1>
         <p>San Antonio Web Developer</p>
         <a href="#section-contact" class="btn btn-primary btn-lg">Contact Me!</a>
     </div>
-</div>
+</div>-->
 
 
 <div class="container">
@@ -87,7 +99,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <span class="glyphicon glyphicon-home"></span>
-                        <a href="http://www.lookleaseandlive.chrisperko.com"><h3>Look, Lease, and Live!</h3></a>
+                        <a href="http://www.lookleaseandlive.chrisperko.net"><h3>Look, Lease, and Live!</h3></a>
                         <p>Web application for local apartment locator.</p>
                     </div>
                 </div>
@@ -135,7 +147,7 @@
                             Let me make a website for you or your business! Over
                             <strong>163 million</strong> people in the U.S. have a
                             smartphone. Your website will be easily readable on all
-                            devices, including those smartphones, tables, and desktops!
+                            devices, including smartphones, tables, and desktops!
                         </p>
                         <p>
                             <em>Starting at $299!</em>
@@ -209,12 +221,24 @@
 
 <footer>
     <div class="container text-center footer-inverse">
-        <p>&copy; Chris Perko 2014</p>
+        <div class="row">
+            <ul class="list-inline">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-github"></span></a></li>
+                <li><a href="#"><span class="fa fa-codepen"></span></a></li>
+                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>&copy; Chris Perko 2014</p>
+        </div>
     </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="smooth-scroll.js"></script>
+<script src="js/smooth-scroll.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
