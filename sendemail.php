@@ -2,7 +2,7 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$msg = $_POST['message'];
+$msg = $_POST['contact-message'];
 
 
 $message = "Name: " . $name . "\nEmail: " . $email . "\nMessage: " . $msg;
