@@ -1,0 +1,36 @@
+html,body{
+	padding:0;
+	margin:0;
+}
+
+.top-row {
+	height: 50%;
+}
+
+.top-row .left-square {
+	background-color: #f00;
+	width: 30%;
+	height: 100%;
+}
+
+.top-row .right-square {
+	background-color: #0f0;
+	width: 70%;
+	height: 100%;
+}
+
+.bottom-row {
+	height: 50%;
+}
+
+.bottom-row .left-square {
+	background-color: #00f;
+	width: 60%;
+	height: 100%;
+}
+
+.bottom-row .right-square {
+	background-color: #f0f;
+	width: 40%;
+	height: 100%;
+}
