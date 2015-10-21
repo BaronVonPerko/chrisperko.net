@@ -30,7 +30,7 @@ gulp.task('browser-sync', ['sass'], function() {
 });
 
 gulp.task('resources', function() {
-  gulp.src('res/*', {base: './'})
+  gulp.src('res/**/*', {base: './'})
   .pipe(gulp.dest('_build/'));
 });
 

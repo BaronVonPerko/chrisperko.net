@@ -1,4 +1,6 @@
 header
+  $height: 500px
+  height: $height
 
   .logo-bg
     $size: 500px
@@ -25,13 +27,12 @@ header
       margin: 0
 
   nav
-    box-shadow: 5px 5px 12px rgba(0,0,0,0.25)
     width: 100%
     padding: 10px 0
     text-align: right
     font-size: 22pt
-    border-bottom: 2px solid grey
-    background-color: #0099ff
+    background-color: rgba(33,65,86, 0.6)
+    color: white
 
     ul
       list-style: none
@@ -40,3 +41,13 @@ header
       li
         display: inline-block
         padding-left: 30px
+
+  .hero
+    position: absolute
+    top: 0
+    z-index: -1
+    width: 100%
+    height: $height
+    background:
+      image: url('../res/images/hillcountry.jpg')
+      size: cover
