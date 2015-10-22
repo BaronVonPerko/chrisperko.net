@@ -1,6 +1,6 @@
 
 $(window).scroll(function() {
-  if($(window).scrollTop() > $('header').outerHeight()) {
+  if($(window).scrollTop() > 850) {
     $('.item').removeClass('hidden');
   }
 });
