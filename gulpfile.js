@@ -34,6 +34,11 @@ gulp.task('resources', function() {
   .pipe(gulp.dest('_build/'));
 });
 
+gulp.task('libs', function() {
+  gulp.src('libs/**/*', {base: './'})
+  .pipe(gulp.dest('_build/'));
+});
+
 gulp.task('sass', function () {
   return gulp.src('sass/*.sass')
     .pipe(sass().on('error', sass.logError))
@@ -41,4 +46,4 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['jade', 'sass', 'resources', 'js', 'browser-sync']);
+gulp.task('default', ['jade', 'sass', 'resources', 'libs', 'js', 'browser-sync']);
