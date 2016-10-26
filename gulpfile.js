@@ -24,6 +24,7 @@ gulp.task('browser-sync', ['sass'], function() {
   gulp.watch("sass/*", ['sass']);
   gulp.watch("jadefiles/*", ['jade']);
   gulp.watch('js/*', ['js']);
+  gulp.watch('res/**/*', ['resources']);
 
   gulp.watch('_build/*.html').on('change', browserSync.reload);
   gulp.watch('_build/js/*').on('change', browserSync.reload);
