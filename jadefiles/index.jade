@@ -11,12 +11,12 @@ html
     script(src="js/smoothscroll.js")
     script(src="js/anim.js")
     script(src="js/clicks.js")
+    script(src="js/loader.js")
 
   body
-    include hero
-    include portfolio
-    include contact
-    include footer
-
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    .loading-message Please wait...
+    .site-wrapper
+      include hero
+      include portfolio
+      include contact
+      include footer
