@@ -2,36 +2,44 @@
 
 section#portfolio
 
-  .item, img.mobile
-    border: 3px solid #270B21
-    border-radius: 10px
-    margin: 50px 0
+  .image-wrapper
+    position: relative
+    width: 80%
+    margin: 30px auto
+    cursor: pointer
 
-  .item
-    width: 100%
-    height: 60%
+    &:before
+      position: absolute
+      border-radius: 10px
+      content: ''
+      background-color: rgba(0,0,0,0.8)
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      opacity: 0
+      transition: all 200ms ease-in-out
 
-    @media(max-width: $medium)
-      display: none
+    &:hover
+      &:before
+        opacity: 1
 
-    &.item-buybyelease
-      background: url('/res/images/buybyelease.png')
-      background-size: cover
-      background-repeat: no-repeat
+    &:hover
+      p.description
+        top: 30%
+        color: white
 
-    &.item-owltoreed
-      background: url('/res/images/owltoreed.png')
-      background-size: cover
-      background-repeat: no-repeat
+    p.description
+      color: rgba(0,0,0,0)
+      position: absolute
+      top: 0
+      text-align: center
+      width: 100%
+      font-size: 18pt
+      transition: all 300ms ease-in-out
 
-    &.item-raffle
-      background: url('/res/images/raffle.png')
-      background-size: cover
-      background-repeat: no-repeat
-
-  img.mobile
-    display: none
-    width: 100%
-
-    @media(max-width: $medium)
+    img
+      width: 100%
+      border-radius: 10px
       display: block
+      z-index: -1
