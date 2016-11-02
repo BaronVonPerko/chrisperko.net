@@ -1,21 +1,24 @@
 html
   head
+    title Chris Perko | Web Developer
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(name="theme-color", content="#0000ff")
+    meta(name="theme-color", content="#aaa")
     link(rel="stylesheet", href="css/main.css")
     link(rel="stylesheet", href="libs/animate.css")
     link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100', rel='stylesheet', type='text/css')
+    link(href="https://fonts.googleapis.com/css?family=Righteous", rel="stylesheet", type='text/css')
     script(src="https://code.jquery.com/jquery-1.11.3.min.js")
-    script(src="js/smoothscroll.js")
-    script(src="js/anim.js")
     script(src="js/clicks.js")
+    script(src="js/loader.js")
+    script(src="js/parallax.js")
 
   body
-    include header
-    include about
-    include portfolio
-    include contact
-    include footer
+    .load-wrapper
+      .load-spinner.pulse
 
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    .site-wrapper
+      include hero
+      include portfolio
+      include codepen
+      include contact
+      include footer
